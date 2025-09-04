@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Motors - O seu destino para carros de luxo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Luxury Motors</div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#modelos">Modelos</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Bem-vindo à Luxury Motors</h1>
+                <p>Descubra o mundo dos carros de luxo</p>
+            </div>
+            <video autoplay muted loop>
+                <source src="FERRARI 488.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <div class="scroll-down">↓</div>
+        </section>
+
+        <section id="modelos" class="modelos">
+            <h2>Nossos Modelos</h2>
+            <div class="car-grid">
+                <div class="car-card">
+                    <img src="ferrari 488 gtb.jpg" alt="Ferrari"> 
+                    <h3>Ferrari 488 GTB</h3>
+                    <p>R$ 3.500.000</p>
+                    <button onclick="window.location.href='detalhes-carro.html?id=ferrari-488-gtb'">Saiba Mais</button>
+                </div>
+                <div class="car-card">
+                    <img src="Mercedes-AMG GT.jpg" alt="Mercedes">
+                    <h3>Mercedes-AMG GT</h3>
+                    <p>R$ 2.800.000</p>
+                    <button onclick="window.location.href='detalhes-carro.html?id=mercedes-amg-gt'">Saiba Mais</button>
+                </div>
+                <div class="car-card">
+                    <img src="BMW M8 Competition.jpg" alt="BMW">
+                    <h3>BMW M8 Competition</h3>
+                    <p>R$ 1.200.000</p>
+                    <button onclick="window.location.href='detalhes-carro.html?id=bmw-m8-competition'">Saiba Mais</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="sobre-container">
+                <div class="sobre-imagem">
+                    <img src="assets/images/concessionaria.jpg" alt="Nossa Concessionária">
+                </div>
+                <div class="sobre-conteudo">
+                    <h2>Sobre Nós</h2>
+                    <div class="sobre-texto">
+                        <p>A Luxury Motors é referência em carros de luxo no Brasil. Com mais de 20 anos de experiência, oferecemos os melhores veículos das marcas mais prestigiadas do mundo.</p>
+                        <div class="sobre-destaques">
+                            <div class="destaque-item">
+                                <span class="destaque-numero">20+</span>
+                                <span class="destaque-texto">Anos de Experiência</span>
+                            </div>
+                            <div class="destaque-item">
+                                <span class="destaque-numero">1000+</span>
+                                <span class="destaque-texto">Clientes Satisfeitos</span>
+                            </div>
+                            <div class="destaque-item">
+                                <span class="destaque-numero">50+</span>
+                                <span class="destaque-texto">Modelos Disponíveis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="contato-container">
+                <h2>Entre em Contato</h2>
+                <div class="contato-grid">
+                    <div class="contato-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Localização</h3>
+                            <p>Av. Luxury, 1000 - São Paulo, SP</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <h3>Telefone</h3>
+                            <p>(61) 99459-9637</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>contato@luxurymotors.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <h3>Horário de Funcionamento</h3>
+                            <p>Segunda a Sábado: 9h às 18h</p>
+                        </div>
+                    </div>
+                    <form class="contato-form">
+                        <div class="form-grupo">
+                            <input type="text" placeholder="Nome Completo" required>
+                        </div>
+                        <div class="form-grupo">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-grupo">
+                            <input type="tel" placeholder="Telefone" required>
+                        </div>
+                        <div class="form-grupo">
+                            <select required>
+                                <option value="">Selecione o Modelo de Interesse</option>
+                                <option value="ferrari">Ferrari 488 GTB</option>
+                                <option value="mercedes">Mercedes-AMG GT</option>
+                                <option value="bmw">BMW M8 Competition</option>
+                            </select>
+                        </div>
+                        <div class="form-grupo">
+                            <textarea placeholder="Mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Luxury Motors. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
